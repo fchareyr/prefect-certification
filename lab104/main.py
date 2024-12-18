@@ -67,12 +67,12 @@ if __name__ == "__main__":
         source="https://github.com/fchareyr/prefect-certification.git",
         entrypoint="lab104/main.py:pipeline",
     ).deploy(
-        name="deploy-5-local",
+        name="deploy-4-local",
         work_pool_name="local"
     )
 
     pipeline.deploy(
-        name="deploy-6-docker",
+        name="deploy-4-docker",
         work_pool_name="docker",
         image="discdiver/local-image:1.0",
         push=False,
