@@ -6,5 +6,6 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "httpx>=0.28.1",
+    "prefect-docker>=0.6.2",
     "prefect>=3.1.7",
 ]
