@@ -71,7 +71,7 @@ if __name__ == "__main__":
         work_pool_name="local"
     )
 
-    flow.deploy(
+    pipeline.deploy(
         name="deploy-6-docker",
         work_pool_name="docker",
         image="discdiver/local-image:1.0",
