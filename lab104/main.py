@@ -71,10 +71,9 @@ if __name__ == "__main__":
         work_pool_name="local"
     )
 
-    flow.from_source(
-        source="https://github.com/fchareyr/prefect-certification.git",
-        entrypoint="lab104/main.py:pipeline",
-    ).deploy(
+    flow.deploy(
         name="deploy-6-docker",
-        work_pool_name="docker"
+        work_pool_name="docker",
+        image="discdiver/local-image:1.0",
+        push=False,
     )
