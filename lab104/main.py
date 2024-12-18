@@ -59,6 +59,22 @@ if __name__ == "__main__":
         source="https://github.com/fchareyr/prefect-certification.git",
         entrypoint="lab104/main.py:pipeline",
     ).deploy(
-        name="deploy-4",
+        name="deploy-4-managed",
         work_pool_name="managed"
+    )
+
+    flow.from_source(
+        source="https://github.com/fchareyr/prefect-certification.git",
+        entrypoint="lab104/main.py:pipeline",
+    ).deploy(
+        name="deploy-5-local",
+        work_pool_name="local"
+    )
+
+    flow.from_source(
+        source="https://github.com/fchareyr/prefect-certification.git",
+        entrypoint="lab104/main.py:pipeline",
+    ).deploy(
+        name="deploy-6-docker",
+        work_pool_name="docker"
     )
