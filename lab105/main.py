@@ -16,7 +16,7 @@ def make_operation():
 @flow
 def run_operation():
     run_deployment(
-        name="make_operation/deploy-5-nested"
+        name="make-operation/deploy-5-nested"
     )
 
 if __name__ == '__main__':
